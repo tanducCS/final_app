@@ -1,0 +1,23 @@
+
+.new_photo.form__label{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #555;
+    color: #444;
+    background-color: #e2e3e5;
+    transition: background-color 0.2s ease-out;
+}
+
+.new_photo.form__label:hover{
+    background-color: #7c7c7c;
+    border-color: #111;
+    cursor: pointer;
+}

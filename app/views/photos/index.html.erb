@@ -1,0 +1,32 @@
+
+<div class="col-10 col-md-8 bg-body ">
+  <!-- Button to choose photo or album -->
+  <%= render 'layouts/user_header' %>
+  <div class="d-flex justify-content-end ">
+    <%= link_to "Add New Photo", new_user_photo_path, class:'btn btn-success' %>
+  </div>
+  <!-- List items -->
+  <div class="list-items row d-flex justify-content-evenly  mt-2 mb-3">
+    <% @photos.each do |photo| %>
+      <div class="list-items__item  mb-3 col-md-6 col-lg-3  d-flex justify-content-center align-items-center   " >
+        <div class=" item__container-img rounded overflow-hidden d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
+          <%= image_tag photo.image_url.url,style:'width:100%' %>
+          <div class="photo container__mode ">
+            <i class="fa-solid fa-lock fa-xl"></i>
+          </div>
+          <%= link_to "EDIT",edit_photo_path(photo.id),class:'photo container__edit_photo rounded text-white text-decoration-none' %>
+        </div>
+      </div>
+    <%end %>
+  </div>
+
+  <!-- Pagination -->
+
+</div>
+<div class="col-sm-2 ">
+
+</div>
+
+
+
+

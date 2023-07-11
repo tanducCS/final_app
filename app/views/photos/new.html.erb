@@ -1,0 +1,42 @@
+
+<div class="col-10 col-md-8 bg-body ">
+  <div class="d-flex  align-items-center  mt-4">
+    <h4 class="text-center">New Photo</h4>
+  </div>
+  <hr>
+
+  <!-- Form Edit Photo -->
+  <%= form_with(model: @photo, url:user_photos_path(current_user), html: {class: "row g-4"}) do |form| %>
+    <div class="col-md-5 ">
+      <%= form.label :title, "Title", class:'form-label fw-bold' %>
+      <%= form.text_field :title, class:'form-control mb-3', placeholder:'Photo Title'%>
+      <div class="col-6 mb-5">
+        <%= form.label :sharing_mode, "Sharing mode", class:'form-label fw-bold' %>
+        <%= form.select :sharing_mode, [[:Public,:public1], [:Private,:private1]], {selected: "Public1"}, {class: "form-select" } %>
+      </div>
+    </div>
+    <div class="col-md-6 ">
+      <%= form.label :description,"Description",class:'form-label fw-bold' %>
+      <%= form.text_area :description,class:'form-control', placeholder:'Photo Description' %>
+    </div>
+    <div class="  mb-5 ">
+      <%= form.file_field :image_url, class:'form-control  form__input d-none' %>
+      <%= form.label :image_url,class:"new_photo form__label" do%>
+          <i class="fa-solid fa-plus fa-2xl "></i>
+      <%end %>
+    </div>
+    <div>
+      <div class="col-3 d-flex justify-content-between">
+        <%= form.submit "Save",class:"btn btn-success" %>
+      </div>
+    </div>
+  <%end %>
+
+
+
+</div>
+<div class="col-sm-2 ">
+
+</div>
+
+

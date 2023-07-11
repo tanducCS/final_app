@@ -1,0 +1,23 @@
+<div class="user-navbar row mt-3 mb-5 ">
+  <div class="user-navbar__avatar col-3 rounded-circle mx-3 overflow-hidden d-flex justify-content-center" style="height: 200px; width:200px">
+    <%= image_tag 'avatar.jpeg' %>
+  </div>
+  <div class="user-navbar__information col  mt-2">
+    <%= link_to "Edit Profile",edit_user_registration_path(current_user),class: 'btn btn-outline-info' %>
+    <h1 class="fw-bolder my-3">Hansford Nguyen</h1>
+    <ul class="nav">
+      <li class="nav-item">
+        <%= link_to "PHOTOS",user_photos_path(current_user), class:'nav-link active text-decoration-none' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "ALBUMS", user_albums_path(current_user), class:'nav-link text-dark text-decoration-none' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "FOLLOWINGS",followings_user_path(current_user), class:'nav-link text-dark text-decoration-none' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "FOLLOWERS",followers_user_path(current_user), class:'nav-link text-dark text-decoration-none' %>
+      </li>
+    </ul>
+  </div>
+</div>

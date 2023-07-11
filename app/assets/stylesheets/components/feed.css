@@ -1,0 +1,15 @@
+.item__images{
+
+    max-height: 450px;
+
+    overflow: hidden;
+}
+
+.item__images img{
+    width: 100%;
+
+}
+/* Modal  */
+#exampleModal .modal-body img{
+    width: 100%;
+}
