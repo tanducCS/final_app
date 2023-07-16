@@ -1,6 +1,7 @@
 class PhotosController < ApplicationController
   def index
-    @photos = Photo.all
+    @user = User.find(params[:user_id])
+    @photos = Photo.where(user_id: params[:user_id])
   end
   def new
     @photo = Photo.new
@@ -20,7 +21,12 @@ class PhotosController < ApplicationController
     redirect_to user_photos_path(current_user)
   end
   def destroy
+    @delete_photo = Photo.find(params[:id])
+    @delete_photo.destroy
+    redirect_to user_photos_path(current_user)
   end
+
+
   def photo_params
     params.require(:photo).permit(:title, :description, :sharing_mode, :image_url)
   end

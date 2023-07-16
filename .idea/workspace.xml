@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="" />
+    <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/albums_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/albums_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/photos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/photos_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/album.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/photo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/photo.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/albums/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/albums/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/follows/followings.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/pages/feed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/feeds.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/photos/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/photos/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/followers.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/followers.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/followings.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/followings.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +60,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tanduc/Documents/final_app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/tanduc/Documents/final_app/app/views/photos&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -45,12 +72,19 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/photos" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/users" />
       <recent name="$PROJECT_DIR$/app/views/follows" />
       <recent name="$PROJECT_DIR$/app/javascript" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.final_app">
+  <component name="RunManager" selected="Node.js.preview_controller.js">
+    <configuration name="preview_controller.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="preview_controller.js" working-dir="$PROJECT_DIR$/app/javascript/controllers">
+      <method v="2" />
+    </configuration>
     <configuration name="final_app" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="final_app" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -124,6 +158,11 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TESTOPTS" VALUE="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.preview_controller.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
@@ -143,7 +182,13 @@
       <workItem from="1688695144731" duration="21023000" />
       <workItem from="1688953972165" duration="15244000" />
       <workItem from="1688979030020" duration="4947000" />
-      <workItem from="1689037471751" duration="3068000" />
+      <workItem from="1689037471751" duration="21827000" />
+      <workItem from="1689126743682" duration="12316000" />
+      <workItem from="1689145161503" duration="9166000" />
+      <workItem from="1689215409870" duration="19583000" />
+      <workItem from="1689267349234" duration="5419000" />
+      <workItem from="1689300430048" duration="13745000" />
+      <workItem from="1689322887529" duration="4072000" />
     </task>
     <servers />
   </component>

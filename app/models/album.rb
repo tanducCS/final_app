@@ -26,10 +26,16 @@ Table name: albums
 
 =end
 class Album < ApplicationRecord
+  mount_uploaders :images, ImageUploader
+  enum :sharing_mode, [:public1, :private1]
+
   belongs_to :user
 
   has_many :photo_albums, dependent: :destroy
   has_many :photos, through: :photo_albums
+
+  has_many :like_albums
+  has_many :liked_by_users, through: :like_albums, source: :user
 
   # Validation
   validates :title, length: {maximum: 140}

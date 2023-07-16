@@ -1,0 +1,94 @@
+<div class="col-10 col-md-8 bg-body ">
+  <!-- Button to choose photo or album -->
+  <div class="d-flex justify-content-center  mt-2">
+    <div class="category btn-group col-1 justify-content-center">
+      <%= link_to "Photos", feeds_photos_user_path(current_user), class: ((current_page?(feeds_photos_user_path(current_user)))? "btn btn-outline-primary active" : "btn btn-outline-primary") %>
+      <%= link_to "Albums", feeds_albums_user_path(current_user), class: (current_page?(feeds_albums_user_path(current_user)))? "btn btn-outline-primary active" : "btn btn-outline-primary"%>
+    </div>
+  </div>
+
+
+  <!-- List items -->
+  <div class="list-items row d-flex justify-content-evenly g-5 mt-2">
+    <% @followees.each do |followee|%>
+      <% followee.photos.each do |photo|%>
+        <div class="list-items__item  mb-3 col-lg-6 "  >
+          <div class="card h-100 shadow bg-body-secondary" >
+            <div class="row g-2">
+              <div class="item__images col-xl-4 d-flex  justify-content-center align-items-center">
+                <%= image_tag photo.image_url.url, class:'rounded-start' %>
+              </div>
+              <div class="col-xl-8 position-relative">
+                <div class="card-body ">
+                  <div class="card-title d-flex flex-row align-items-center">
+                    <div class="overflow-hidden rounded-circle me-3" style="width: 50px; height:50px;">
+                      <% if followee.avatar_url.url.nil? %>
+                        <%= image_tag "avatar.jpeg",class:' me-3', style:"width:100%"%>
+                      <%else %>
+                        <%= image_tag followee.avatar_url.url, class:'me-3', style:"width:100%"%>
+                      <%end %>
+                    </div>
+                    <h5 class=""><%=  link_to followee.first_name + ' ' + followee.last_name,user_photos_path(followee.id),class:'text-decoration-none'%></h5>
+                  </div>
+                  <p class="card-text fw-bold" ><%= photo.title %></p>
+                  <p class="card-text mb-3"><%= photo.description %></p>
+                  <div class="position-absolute bottom-0 mb-2" style="width: 90%;">
+                    <div class="d-flex justify-content-between align-items-center w-100" >
+                      <i class="fa-solid fa-heart"></i>
+                      <p class="card-text"><small class="text-body-secondary">4:50 pm 01/04/2018</small></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <%end %>
+
+
+  </div>
+
+  <!-- Pagination -->
+  <nav aria-label="" class="d-flex justify-content-center">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item active" ><a class="page-link" href="#">1</a></li>
+      <li class="page-item " aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="col-sm-2 ">
+
+</div>
+<!-- Modal => a dialog present when click on a photo-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nam Lorem ipsum dolor sit.</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi voluptatibus. Corrupti ipsa explicabo reprehenderit officia quos eaque deserunt? Possimus aspernatur velit, quia sed soluta ratione optio maiores iure consectetur.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+

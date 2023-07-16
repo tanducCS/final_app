@@ -1,256 +1,32 @@
 
 <div class="col-10 col-md-8 bg-body ">
   <!-- Button to choose photo or album -->
-  <%= render 'layouts/user_header' %>
+  <%=render partial: 'layouts/user_header', locals: {user: @user} %>
   <div class="d-flex justify-content-end ">
-    <%= link_to "Add New Photo", root_path, class:'btn btn-success' %>
+    <%= link_to "Add New Album", new_user_album_path(current_user), class:'btn btn-success'%>
   </div>
 
   <!-- List items -->
   <div class="list-items row d-flex justify-content-evenly  mt-2 mb-3">
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center   " >
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo2.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
+    <% @user.albums.each do |album| %>
+      <div class="list-items__item  mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center   " >
+        <div class="album item__container-img rounded   d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
+          <%album.images.last(3).each  do |image|%>
+            <%= image_tag image.url, class:'album__image border border-white' %>
+          <%end %>
 
+          <% if album.sharing_mode === 'private1' %>
+            <div class="album container__mode ">
+              <i class="fa-solid fa-lock fa-xl"></i>
+            </div>
+          <%end %>
+          <div class="album container__editblock ">
+            <h5 class="text-center"><%= album.images.size %> PHOTOS</h5>
+          </div>
+          <%= link_to "EDIT", edit_album_path(album.id),class:'album container__edit_album rounded text-white text-decoration-none' %>
+        </div>
       </div>
-    </div>
-    <div class="list-items__item mb-3 col-md-6 col-lg-3  d-flex justify-content-center align-items-center  "  >
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo3.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-      </div>
-    </div>
-
-    <div class="list-items__item mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center  "  >
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo4.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center  "  >
-
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo5.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo6.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo7.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center  ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo8.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center  ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-
-
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo2.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo3.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center  ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo4.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3 d-flex justify-content-center align-items-center  ">
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo5.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center   " >
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo6.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center  "  >
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo7.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-
-    <div class="list-items__item mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center  "  >
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-        <%= image_tag "photo8.jpeg", class:'album__image' %>
-        <%= image_tag "photo1.jpeg", class:'album__image' %>
-        <%= image_tag "user_follow.jpg", class:'album__image'%>
-        <div class="album container__mode ">
-          <i class="fa-solid fa-lock fa-xl"></i>
-        </div>
-        <div class="album container__editblock ">
-          <h5 class="text-center">13 PHOTOS</h5>
-        </div>
-        <p class="album container__edit_album rounded text-white">EDIT</p>
-
-      </div>
-    </div>
-    <div class="list-items__item  mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center  "  >
-      <div class="album item__container-img rounded  d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
-      <%= image_tag "photo2.jpeg", class:'album__image' %>
-      <%= image_tag "photo1.jpeg", class:'album__image' %>
-      <%= image_tag "user_follow.jpg", class:'album__image'%>
-      <div class="album container__mode ">
-        <i class="fa-solid fa-lock fa-xl"></i>
-      </div>
-      <div class="album container__editblock ">
-        <h5 class="text-center">13 PHOTOS</h5>
-      </div>
-      <p class="album container__edit_album rounded text-white">EDIT</p>
-
-    </div>
-    </div>
+    <% end %>
 
   </div>
 

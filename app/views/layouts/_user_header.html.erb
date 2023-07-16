@@ -2,21 +2,32 @@
   <div class="user-navbar__avatar col-3 rounded-circle mx-3 overflow-hidden d-flex justify-content-center" style="height: 200px; width:200px">
     <%= image_tag 'avatar.jpeg' %>
   </div>
+  <%= user.id%>
   <div class="user-navbar__information col  mt-2">
-    <%= link_to "Edit Profile",edit_user_registration_path(current_user),class: 'btn btn-outline-info' %>
-    <h1 class="fw-bolder my-3">Hansford Nguyen</h1>
+
+    <% if user.id === current_user.id %>
+      <%= link_to "Edit Profile",edit_user_registration_path(current_user),class: 'btn btn-outline-info' %>
+    <% elsif current_user.followees.exists?(id: user.id)%>
+      <%= button_to "Unfollow", delete_follow_path(user.id),method: :delete, data: { turbo_confirm: "Unfollow this user?"}, class: 'btn btn-outline-warning' %>
+
+  <%else %>
+      <%=  button_to "Follow",create_follow_path(user.id), data: {turbo_method: :post, turbo_confirm: "Follow this user?"}, class: 'btn btn-warning' %>
+    <% end %>
+
+    <h1 class="fw-bolder my-3"><%= user.first_name + ' ' + user.last_name %></h1>
+
     <ul class="nav">
       <li class="nav-item">
-        <%= link_to "PHOTOS",user_photos_path(current_user), class:'nav-link active text-decoration-none' %>
+        <%= link_to user.photos.size.to_s + ' ' + "PHOTOS", user_photos_path(user.id),  class: ((current_page?(user_photos_path(user.id)))? 'nav-link active text-decoration-none' :"nav-link text-dark text-decoration-none")  %>
       </li>
       <li class="nav-item">
-        <%= link_to "ALBUMS", user_albums_path(current_user), class:'nav-link text-dark text-decoration-none' %>
+        <%= link_to user.albums.size.to_s + ' ' + "ALBUMS", user_albums_path(user.id),  class: ((current_page?(user_albums_path(user.id)))? 'nav-link active text-decoration-none' :"nav-link text-dark text-decoration-none")  %>
       </li>
       <li class="nav-item">
-        <%= link_to "FOLLOWINGS",followings_user_path(current_user), class:'nav-link text-dark text-decoration-none' %>
+        <%= link_to user.followees.size.to_s + ' ' + "FOLLOWINGS",followings_user_path(user.id),  class: ((current_page?(followings_user_path(user.id)))? 'nav-link active text-decoration-none' :"nav-link text-dark text-decoration-none")  %>
       </li>
       <li class="nav-item">
-        <%= link_to "FOLLOWERS",followers_user_path(current_user), class:'nav-link text-dark text-decoration-none' %>
+        <%= link_to user.followers.size.to_s + ' ' +  "FOLLOWERS",followers_user_path(user.id), class: ((current_page?(followers_user_path(user.id)))? 'nav-link active text-decoration-none' :"nav-link text-dark text-decoration-none") %>
       </li>
     </ul>
   </div>

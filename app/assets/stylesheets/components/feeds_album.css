@@ -1,0 +1,28 @@
+.album.item__images{
+    position: relative;
+    max-height: 450px;
+}
+
+.album.item__images img{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+.album.item__images img:nth-child(2){
+    z-index: 2;
+    transform: rotate(4deg);
+}
+
+.album.item__images img:nth-child(3){
+    z-index: 1;
+    transform: rotate(8deg);
+}
+/* Modal  */
+#exampleModal .modal-body img{
+    width: 100%;
+}

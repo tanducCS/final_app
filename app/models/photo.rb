@@ -2,14 +2,15 @@
 #
 # Table name: photos
 #
-#  id           :bigint           not null, primary key
-#  title        :string           not null
-#  description  :string           not null
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
-#  user_id      :bigint           not null
-#  image_url    :string           default("image.png"), not null
-#  sharing_mode :integer          default("public1"), not null
+#  id                 :bigint           not null, primary key
+#  title              :string           not null
+#  description        :string           not null
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#  user_id            :bigint           not null
+#  image_url          :string           default("image.png"), not null
+#  sharing_mode       :integer          default("public1"), not null
+#  is_belong_to_album :boolean          default(FALSE)
 #
 class Photo < ApplicationRecord
   # Association
@@ -18,6 +19,11 @@ class Photo < ApplicationRecord
 
   has_many :photo_albums, dependent: :destroy
   has_many :albums, through: :photo_albums
+
+  has_many :like_photos
+  has_many :liked_by_users, through: :like_photos, source: :user
+
+
 
 
   # Validation

@@ -1,7 +1,7 @@
 <div class="col-10 col-md-8 bg-body ">
   <div class="d-flex justify-content-between align-items-center  mt-4">
     <h4 class="text-center">Edit Photo</h4>
-    <%= link_to "Back", root_path, class:'btn btn-primary' %>
+    <%= link_to "Back", :back, class:'btn btn-primary' %>
   </div>
   <hr>
 
@@ -28,13 +28,11 @@
       </div>
 
       <div class="col-3 d-flex justify-content-between">
-        <%= form.submit "Save",class: 'btn btn-success' %>
-        <%= form_with(model: @edit_photo, url:photo_path(@edit_photo),method: :delete) do |form| %>
-          <%= form.submit "Delete", class: 'btn btn-danger'%>
-        <%end %>
+        <%= form.submit "Save",class: 'btn btn-success',data: {turbo_confirm: "Save?"} %>
       </div>
     </div>
   <%end %>
+  <%= button_to "Delete", photo_path(@edit_photo),form: {data: {turbo_confirm: "Are you sure?" }} , method: :delete,class:"btn btn-danger" %>
 
 
 

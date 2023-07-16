@@ -26,14 +26,18 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 
+  has_many :like_albums
+  has_many :liked_albums, through: :like_albums,  source: :album
 
+  has_many :like_photos
+  has_many :liked_photos, through: :like_photos, source: :photo
 
 
   has_many :albums, dependent: :destroy
   has_many :photos, dependent: :destroy
 
 
-  validates :first_name, :last_name, :email, :active, :password, :gender , presence: true
+  validates :first_name, :last_name, :email, :active, :gender , presence: true
   validates :first_name, length: {maximum: 25}
   validates :last_name, length: {maximum: 25}
   validates :email, length: {maximum: 255}
