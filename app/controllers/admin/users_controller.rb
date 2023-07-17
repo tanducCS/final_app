@@ -1,7 +1,7 @@
 module Admin
   class UsersController < ApplicationController
     def index
-      @users = User.all
+      @pagy, @users = pagy(User.all)
     end
     def edit
       @edit_user = User.find params[:id]
