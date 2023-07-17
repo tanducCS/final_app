@@ -68,6 +68,50 @@ class UsersController < ApplicationController
              turbo_stream.replace("photo_#{photo.id}", html: html_content.html_safe)
   end
 
+
+  # Create and delete like album -->
+  def create_like_album
+    album = Album.find(params[:album_id])
+    LikeAlbum.create!(user_id: current_user.id, album_id: album.id)
+
+    update_create_like_album album
+  end
+
+  def update_create_like_album (album)
+    html_content = render_to_string(inline: <<-HTML.strip_heredoc)
+    <%= turbo_frame_tag "album_#{album.id}", class: 'd-flex flex-row' do %>
+      <%= link_to delete_like_album_path(album_id: #{album.id}), class: 'me-3' , data: {turbo_method: :delete} do %>
+        <i class="fa-solid fa-heart"></i>
+      <% end %>
+      <p style="margin-bottom: 0;"><%= #{album.liked_by_users.size} %></p>
+    <% end %>
+    HTML
+
+    render turbo_stream:
+             turbo_stream.replace("album_#{album.id}", html: html_content.html_safe)
+  end
+
+  def delete_like_album
+    album = Album.find(params[:album_id])
+    like = LikeAlbum.find_by(user_id: current_user.id, album_id: params[:album_id])
+    like.destroy
+
+    update_delete_like_album album
+  end
+  def update_delete_like_album (album)
+    html_content = render_to_string(inline: <<-HTML.strip_heredoc)
+    <%= turbo_frame_tag "album_#{album.id}", class: 'd-flex flex-row' do %>
+      <%= link_to create_like_album_path(album_id: #{album.id}), class: 'me-3',data: {turbo_method: :post} do %>
+        <i class="fa-regular fa-heart"></i>
+      <% end %>
+      <p style="margin-bottom: 0;"><%= #{album.liked_by_users.size} %></p>
+    <% end %>
+    HTML
+
+    render turbo_stream:
+             turbo_stream.replace("album_#{album.id}", html: html_content.html_safe)
+  end
+
   def feeds_photos
     @followees = current_user.followees
   end
