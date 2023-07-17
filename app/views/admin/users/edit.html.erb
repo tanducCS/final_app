@@ -1,0 +1,77 @@
+<div class="col-10 col-md-8 bg-body ">
+  <div class="d-flex justify-content-between align-items-center  mt-4">
+    <h2>Edit User Profile</h2>
+    <%= link_to "Back", :back, class:'btn btn-primary' %>
+  </div>
+  <hr>
+
+
+  <%= form_with(model: @edit_user, url: admin_user_path(@edit_user), html: { method: :put }) do |f| %>
+    <div class="row justify-content-center">
+
+      <div class="col-2"></div>
+      <div class="col-4" data-controller="previewPhoto">
+        <%= f.file_field :avatar_url, class:'form-control  form__input d-none'%>
+        <%= f.label :avatar_url, class:'form-label overflow-hidden',id:'input__label',style: "width:200px;height:200px;" do%>
+          <% if @edit_user.avatar_url.url.nil? %>
+            <%= image_tag "avatar.jpeg", style:"width:100%",id:'input__image' %>
+          <%else %>
+            <%= image_tag @edit_user.avatar_url.url, style:"width:100%",id:'input__image' %>
+          <%end %>
+        <%end %>
+      </div>
+      <div class="w-100"></div>
+      <div class="col-2"></div>
+      <div class="col-4">
+        <p class="text-primary">Basic information</p>
+      </div>
+      <div class="w-100 "></div>
+      <%= f.label :first_name,"First name" ,class:'form-label fw-bold col-2 d-flex justify-content-end align-items-center' %>
+      <div class="col-4">
+        <%= f.text_field :first_name,class:'form-control',placeholder:'First Name'%>
+      </div>
+      <div class="w-100 mb-3"></div>
+
+      <%= f.label :last_name,"Last name", class:'form-label fw-bold col-2 d-flex justify-content-end align-items-center' %>
+      <div class="col-4">
+        <%= f.text_field :last_name,class:'form-control',placeholder:'Last Name'%>
+      </div>
+
+      <div class="w-100 mb-3"></div>
+
+      <%= f.label :email, "Email",class:'form-label fw-bold col-2 d-flex justify-content-end align-items-center' %>
+      <div class="col-4">
+        <%= f.text_field :email,class:'form-control',placeholder:'First Name'%>
+      </div>
+
+      <div class="w-100 mb-3"></div>
+      <%= f.label :password, class:'col-2 form-label fw-bold d-flex justify-content-end' %>
+      <div class="col-4 mb-3">
+        <%= f.password_field :password, class:'form-control', autocomplete: "new-password", required: false %>
+      </div>
+
+      <div class="w-100 mb-3"></div>
+      <%= f.label :active, class:'col-2 form-check-label fw-bold d-flex justify-content-end' %>
+      <div class="col-4 mb-3">
+        <%= f.check_box :active,class: 'form-check-input', checked: @edit_user.active%>
+      </div>
+
+      <div class="w-100 mb-3"></div>
+      <div class="col-2 d-flex justify-content-end"></div>
+      <div class="col-4">
+        <%= f.submit "Save",class: 'btn btn-success',data: {turbo_confirm: "Save?"} %>
+      </div>
+
+
+    </div>
+    <div class="d-grid mb-3 col-1 offset-5">
+
+    </div>
+
+
+  <% end %>
+  <div class="w-100"></div>
+
+
+</div>
+
