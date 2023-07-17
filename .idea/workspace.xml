@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-    </list>
+    <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +163,7 @@
       <workItem from="1689300430048" duration="13745000" />
       <workItem from="1689322887529" duration="4072000" />
       <workItem from="1689522820007" duration="616000" />
-      <workItem from="1689559661862" duration="6631000" />
+      <workItem from="1689559661862" duration="6979000" />
     </task>
     <servers />
   </component>
