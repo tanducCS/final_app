@@ -22,6 +22,52 @@ class UsersController < ApplicationController
     redirect_to user_photos_path(current_user)
   end
 
+  def create_like
+    user_like = current_user
+    photo_liked_id = params[:photo_id]
+    photo = Photo.find(params[:photo_id])
+    LikePhoto.create!(user_id: user_like.id, photo_id: photo_liked_id)
+
+    update_create_like photo
+  end
+
+  def update_create_like (photo)
+    html_content = render_to_string(inline: <<-HTML.strip_heredoc)
+    <%= turbo_frame_tag "photo_#{photo.id}", class: 'd-flex flex-row' do %>
+      <%= link_to delete_like_path(photo_id: #{photo.id}), class: 'me-3' , data: {turbo_method: :delete} do %>
+        <i class="fa-solid fa-heart"></i>
+      <% end %>
+      <p style="margin-bottom: 0;"><%= #{photo.liked_by_users.size} %></p>
+    <% end %>
+    HTML
+
+    render turbo_stream:
+             turbo_stream.replace("photo_#{photo.id}", html: html_content.html_safe)
+  end
+
+
+  def delete_like
+    photo = Photo.find(params[:photo_id])
+    like = LikePhoto.find_by(user_id: current_user.id, photo_id: params[:photo_id])
+    like.destroy
+
+    update_delete_like photo
+  end
+
+  def update_delete_like (photo)
+    html_content = render_to_string(inline: <<-HTML.strip_heredoc)
+    <%= turbo_frame_tag "photo_#{photo.id}", class: 'd-flex flex-row' do %>
+      <%= link_to create_like_path(photo_id: #{photo.id}), class: 'me-3',data: {turbo_method: :post} do %>
+        <i class="fa-regular fa-heart"></i>
+      <% end %>
+      <p style="margin-bottom: 0;"><%= #{photo.liked_by_users.size} %></p>
+    <% end %>
+    HTML
+
+    render turbo_stream:
+             turbo_stream.replace("photo_#{photo.id}", html: html_content.html_safe)
+  end
+
   def feeds_photos
     @followees = current_user.followees
   end

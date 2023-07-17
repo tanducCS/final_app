@@ -14,7 +14,7 @@
       <% followee.photos.each do |photo|%>
         <div class="list-items__item  mb-3 col-lg-6 "  >
           <div class="card h-100 shadow bg-body-secondary" >
-            <div class="row g-2">
+            <div class="row g-2" style="height: 100%;">
               <div class="item__images col-xl-4 d-flex  justify-content-center align-items-center">
                 <%= image_tag photo.image_url.url, class:'rounded-start' %>
               </div>
@@ -34,8 +34,25 @@
                   <p class="card-text mb-3"><%= photo.description %></p>
                   <div class="position-absolute bottom-0 mb-2" style="width: 90%;">
                     <div class="d-flex justify-content-between align-items-center w-100" >
-                      <i class="fa-solid fa-heart"></i>
-                      <p class="card-text"><small class="text-body-secondary">4:50 pm 01/04/2018</small></p>
+                      <% if photo.liked_by_users.exists?(current_user.id)  %>
+                        <%= turbo_frame_tag "photo_#{photo.id}",class:'d-flex flex-row ' do %>
+                          <%= link_to delete_like_path(photo_id: photo.id),class:'me-3',data: {turbo_method: :delete} do%>
+                            <i class="fa-solid fa-heart"></i>
+                          <% end %>
+                          <p style="margin-bottom: 0;"><%= photo.liked_by_users.size%></p>
+                        <%end %>
+                      <%else %>
+                        <%= turbo_frame_tag "photo_#{photo.id}",class:'d-flex flex-row ' do %>
+                          <%= link_to create_like_path(photo_id: photo.id),class:'me-3',data: {turbo_method: :post} do%>
+                            <i class="fa-regular fa-heart"></i>
+                          <% end %>
+                          <p style="margin-bottom: 0;"><%= photo.liked_by_users.size%></p>
+                        <%end %>
+                      <%end %>
+
+
+
+                      <p class="card-text"><small class="text-body-secondary"><%= photo.created_at.strftime("%I:%M %p %m/%d/%Y") %></small></p>
                     </div>
                   </div>
                 </div>

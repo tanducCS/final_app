@@ -6,31 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/albums_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/albums_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/photos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/photos_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/album.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/photo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/photo.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/albums/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/albums/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/follows/followings.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pages/feed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/feeds.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/photos/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/photos/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/followers.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/followers.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/followings.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/followings.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +167,8 @@
       <workItem from="1689267349234" duration="5419000" />
       <workItem from="1689300430048" duration="13745000" />
       <workItem from="1689322887529" duration="4072000" />
+      <workItem from="1689522820007" duration="616000" />
+      <workItem from="1689559661862" duration="6631000" />
     </task>
     <servers />
   </component>

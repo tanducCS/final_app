@@ -14,6 +14,9 @@ Rails.application.routes.draw do
     resources :photos
   end
 
+  post 'like/create/:photo_id', to: 'users#create_like', as: :create_like
+  delete 'like/delete/:photo_id', to: 'users#delete_like', as: :delete_like
+
   post 'follow/create/:id', to: 'users#create_follow', as: :create_follow
   delete 'follow/delete/:id', to: 'users#delete_follow', as: :delete_follow
   get 'feed', to: 'pages#feed'
