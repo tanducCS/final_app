@@ -48,3 +48,16 @@
     z-index: 4;
     margin-bottom: 0;
 }
+
+
+.photo_admin.container__edit_photo{
+    opacity: 60%;
+    position: absolute;
+    top: 0px;
+}
+
+.photo_admin.container__edit_photo p{
+
+    max-width: 230px;
+    margin-bottom: 0;
+}
