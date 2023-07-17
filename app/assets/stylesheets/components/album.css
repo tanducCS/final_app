@@ -56,3 +56,15 @@
     z-index: 4;
     margin-bottom: 0;
 }
+.album_admin.container__edit_album{
+    z-index: 4;
+    opacity: 60%;
+    position: absolute;
+    top: 0px;
+}
+
+.album_admin.container__edit_album p{
+
+    max-width: 230px;
+    margin-bottom: 0;
+}

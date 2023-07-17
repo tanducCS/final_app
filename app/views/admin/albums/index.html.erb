@@ -1,0 +1,46 @@
+
+<div class="col-10 col-md-8 bg-body ">
+  <!-- List items -->
+  <div class="list-items row d-flex justify-content-evenly  mt-4 mb-3">
+    <% @albums.each do |album| %>
+      <div class="list-items__item  mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center   " >
+        <div class="album item__container-img rounded   d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
+          <%album.images.each  do |image|%>
+            <%= image_tag image.url, class:'album__image border border-white' %>
+          <%end %>
+          <div class="album_admin container__edit_album d-flex justify-content-between align-items-center bg-black w-100 ">
+            <p class="text-white mx-3 d-inline-block text-truncate fs-5"><%= album.title %></p>
+            <%= link_to edit_album_path(album) do %>
+              <i class="fa-solid fa-pen-to-square fa-xl me-1" style="color: #ffffff;"></i>
+            <%end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+
+  <!-- Pagination -->
+  <nav aria-label="" class="d-flex justify-content-center">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item active" ><a class="page-link" href="#">1</a></li>
+      <li class="page-item " aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="col-sm-2 ">
+
+</div>
+
+
+
+
