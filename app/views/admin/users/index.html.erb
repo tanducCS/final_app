@@ -1,0 +1,57 @@
+
+
+<div class="col-10 col-md-8 bg-body ">
+  <!--  List Users-->
+  <table class="table mt-4">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Last Login</th>
+    </tr>
+    </thead>
+    <tbody class="table-group-divider">
+
+      <% @users.each_with_index do |user, index| %>
+        <tr>
+          <th scope="row"><%= index + 1 %></th>
+          <td><%= user.first_name%></td>
+          <td><%= user.last_name %></td>
+          <td><%= user.email %>></td>
+          <td></td>
+          <td class="col-1"><%= button_to "Edit", admin_users_path, class:'btn btn-success'%></td>
+          <td class="col-1"><%= button_to "Delete", admin_user_path(user),method: :delete, data: {turbo_confirm: "Delete this user?"}, class:'btn btn-danger'%></td>
+        </tr>
+      <%end %>
+    </tbody>
+  </table>
+
+  <!-- Pagination -->
+  <nav aria-label="" class="d-flex justify-content-center">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item active" ><a class="page-link" href="#">1</a></li>
+      <li class="page-item " aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="col-sm-2 ">
+
+</div>
+
+
+
+
+
+
+

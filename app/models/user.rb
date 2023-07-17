@@ -26,10 +26,10 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 
-  has_many :like_albums
+  has_many :like_albums, dependent: :destroy
   has_many :liked_albums, through: :like_albums,  source: :album
 
-  has_many :like_photos
+  has_many :like_photos, dependent: :destroy
   has_many :liked_photos, through: :like_photos, source: :photo
 
 
@@ -43,10 +43,10 @@ class User < ApplicationRecord
   validates :email, length: {maximum: 255}
   validates_format_of :email, with: URI::MailTo::EMAIL_REGEXP
 
-  has_many :active_follows, foreign_key: :followee_id, class_name: "OnFollow"
+  has_many :active_follows, foreign_key: :followee_id, class_name: "OnFollow",dependent: :destroy
   has_many :followers, through: :active_follows, source: :follower
 
-  has_many :passive_follows, foreign_key: :follower_id, class_name: "OnFollow"
+  has_many :passive_follows, foreign_key: :follower_id, class_name: "OnFollow", dependent: :destroy
   has_many :followees, through: :passive_follows, source: :followee
 
   mount_uploader :avatar_url, ImageUploader

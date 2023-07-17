@@ -8,10 +8,18 @@ Rails.application.routes.draw do
       get 'followers'
       get 'feeds_photos'
       get 'feeds_albums'
+      get 'discover_photos'
+      get 'discover_albums'
     end
   end
   resources :albums, shallow: true do
     resources :photos
+  end
+
+  namespace :admin do
+    resources :users
+    resources :photos
+    resources :albums
   end
 
   post 'like/create/:photo_id', to: 'users#create_like', as: :create_like
