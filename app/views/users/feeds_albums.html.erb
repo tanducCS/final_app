@@ -13,12 +13,12 @@
 
 
   <!-- List items -->
-  <div class="list-items row d-flex justify-content-evenly g-5 mt-2">
+  <div class="list-items row d-flex justify-content-evenly g-5 mt-2" data-controller="feedsAlbum">
     <% @followees.each do |followee|%>
       <% followee.albums.each do |album|%>
-        <div class="list-items__item  mb-3 col-lg-6 ", style="height: 350px;">
+        <div class="list-items__item  mb-3 col-lg-6 " style="height: 350px;">
           <div class="card h-100 shadow bg-body-secondary" >
-            <div class="row g-2 ", style="height: 100%">
+            <div class="row g-2 "  style="height: 100%">
               <div class="col-xl-5 album item__images ">
                   <%album.images.each do |image| %>
                     <%= image_tag image.url, class:'border border-white', style: 'height: 300px;width:200px' %>
@@ -87,21 +87,36 @@
       </li>
     </ul>
   </nav>
+
 </div>
+
 <div class="col-sm-2 ">
 
 </div>
 <!-- Modal => a dialog present when click on a album-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog ">
+<div class="feeds-album__modal  modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Nam Lorem ipsum dolor sit.</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi voluptatibus. Corrupti ipsa explicabo reprehenderit officia quos eaque deserunt? Possimus aspernatur velit, quia sed soluta ratione optio maiores iure consectetur.</p>
+
+        <div id="carouselExample" class="carousel slide" >
+          <div class="carousel-inner">
+            <!--add image here-->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <p></p>
       </div>
 
     </div>

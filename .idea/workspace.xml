@@ -7,9 +7,8 @@
     <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/feedsPhoto_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/feedsPhoto_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_albums.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_albums.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +171,7 @@
       <workItem from="1689522820007" duration="616000" />
       <workItem from="1689559661862" duration="6979000" />
       <workItem from="1689645723434" duration="21300000" />
-      <workItem from="1689731680402" duration="10006000" />
+      <workItem from="1689731680402" duration="18898000" />
     </task>
     <servers />
   </component>

@@ -118,7 +118,6 @@ class UsersController < ApplicationController
 
 
     respond_to do |format|
-      sleep(0.5)
       format.html
       format.turbo_stream
     end
