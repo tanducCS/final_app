@@ -6,37 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/new_album.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/new_album.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/components/new_photo.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/components/new_photo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/photos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/photos_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/previewEditAlbum_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/previewEditAlbum_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/preview_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/preview_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/feed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/photos/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/photos/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/albums/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/albums/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/albums/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/albums/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/albums/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/albums/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/photos/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/photos/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/initializers/pagy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/pagy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/29/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/31/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/32/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/33/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/34/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/35/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/36/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/37/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/38/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/39/mailchimp-mpwF3Mv2UaU-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/40/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/56/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/57/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/user/avatar_url/19/avatar1.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +171,7 @@
       <workItem from="1689522820007" duration="616000" />
       <workItem from="1689559661862" duration="6979000" />
       <workItem from="1689645723434" duration="21300000" />
-      <workItem from="1689731680402" duration="307000" />
+      <workItem from="1689731680402" duration="6503000" />
     </task>
     <servers />
   </component>
