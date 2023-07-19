@@ -27,7 +27,7 @@
             <div class="album image__container m-3 border" id="image__container">
               <%= hidden_field :album, :images, multiple: true, value: image.identifier%>
               <%= image_tag image.url, class:'' %>
-              <button type="button" class="delete-button">DELETE</button>
+              <button type="button" class="delete-button">X</button>
             </div>
             <%end %>
           <%= form.label :images, class:'new_album form__label m-3', id:'new_album__label' do%>

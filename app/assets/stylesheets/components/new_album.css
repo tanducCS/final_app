@@ -29,3 +29,17 @@
     border-color: #111;
     cursor: pointer;
 }
+
+.album.image__container{
+    position: relative;
+}
+.album.image__container button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}

@@ -1,8 +1,7 @@
 module Admin
   class PhotosController < ApplicationController
     def index
-      @photos = Photo.all
+      @pagy, @photos = pagy(Photo.all)
     end
   end
-
 end

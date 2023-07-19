@@ -9,7 +9,7 @@
 
 
   <!-- List items -->
-  <div class="list-items row d-flex justify-content-evenly g-5 mt-2">
+  <div class="list-items row d-flex justify-content-evenly g-5 mt-2" data-controller="feedsPhoto">
     <% @followees.each do |followee|%>
       <% followee.photos.each do |photo|%>
         <div class="list-items__item  mb-3 col-lg-6 "  >
@@ -89,18 +89,17 @@
 
 </div>
 <!-- Modal => a dialog present when click on a photo-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="feeds-photo__model  modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
   <div class="modal-dialog ">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Nam Lorem ipsum dolor sit.</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <img src="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi voluptatibus. Corrupti ipsa explicabo reprehenderit officia quos eaque deserunt? Possimus aspernatur velit, quia sed soluta ratione optio maiores iure consectetur.</p>
+        <p></p>
       </div>
-
     </div>
   </div>
 </div>

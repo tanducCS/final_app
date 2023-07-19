@@ -3,7 +3,9 @@
   <!-- Button to choose photo or album -->
   <%=render partial: 'layouts/user_header', locals: {user: @user} %>
   <div class="d-flex justify-content-end ">
-    <%= link_to "Add New Album", new_user_album_path(current_user), class:'btn btn-success'%>
+    <%if @user.id === current_user.id%>
+      <%= link_to "Add New Album", new_user_album_path(current_user), class:'btn btn-success'%>
+    <%end %>
   </div>
 
   <!-- List items -->

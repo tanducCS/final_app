@@ -7,7 +7,6 @@ export default class extends Controller {
     preview(){
         let fileInput = document.getElementById('album_images')
         let imagesContainer = document.getElementById("album__images")
-        let hiddenField = document.getElementsByClassName("abc")
         const labelFileInput = document.getElementById("new_album__label")
         const listImage = []
         function addFile(){
@@ -27,7 +26,7 @@ export default class extends Controller {
 
                     div.appendChild(image)
                     let button = document.createElement("button")
-                    button.innerHTML = "DELETE"
+                    button.innerHTML = "X"
                     div.appendChild(button)
                     button.addEventListener('click',() =>{
                         div.remove()
@@ -42,7 +41,6 @@ export default class extends Controller {
             if(index > -1){
                 listImage.splice(index,1)
             }
-            console.log(listImage)
         }
         fileInput.addEventListener('change', () => {
             addFile()
@@ -59,7 +57,6 @@ export default class extends Controller {
         }
 
         const buttons = document.querySelectorAll('.delete-button')
-        console.log(buttons)
         buttons.forEach(button => {
             button.addEventListener('click', () =>{
                 const imageContainer = button.closest(".image__container")

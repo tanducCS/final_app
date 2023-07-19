@@ -21,3 +21,19 @@
     border-color: #111;
     cursor: pointer;
 }
+.new_photo.image__container img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.new_photo.image__container button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}

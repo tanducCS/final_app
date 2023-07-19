@@ -13,12 +13,14 @@
       <div class="col-2"></div>
       <div class="col-4" data-controller="previewPhoto">
         <%= f.file_field :avatar_url, class:'form-control  form__input d-none'%>
-        <%= f.label :avatar_url, class:'form-label overflow-hidden',id:'input__label',style: "width:200px;height:200px;" do%>
+
+        <%= f.label :avatar_url, class:'edit__user form-label overflow-hidden',id:'input__label',style: "width:200px;height:200px;" do%>
           <% if resource.avatar_url.url.nil? %>
             <%= image_tag "avatar.jpeg", style:"width:100%",id:'input__image' %>
           <%else %>
             <%= image_tag resource.avatar_url.url, style:"width:100%",id:'input__image' %>
           <%end %>
+          <h4>CHANGE</h4>
         <%end %>
       </div>
       <div class="w-100"></div>

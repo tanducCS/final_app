@@ -1,7 +1,7 @@
 <div class="col-10 col-md-8 bg-body ">
   <div class="d-flex justify-content-between align-items-center  mt-4">
     <h4 class="text-center">Edit Photo</h4>
-    <%= link_to "Back", :back, class:'btn btn-primary' %>
+    <%= link_to "Back", user_photos_path(current_user), class:'btn btn-primary' %>
   </div>
   <hr>
 
@@ -20,10 +20,13 @@
       <%= form.text_area :description,class:'form-control', placeholder: @edit_photo.description %>
     </div>
     <div>
-      <div class="col-6 col-md-3 mb-5 d-flex justify-content-center", style="height: 200px;width:200px">
+      <div class="col-6 col-md-3 mb-5 d-flex justify-content-center" style="height: 200px;width:200px" data-controller="previewEditPhoto">
         <%= form.file_field :image_url, class:'form-control  form__input d-none' %>
-        <%= form.label :image_url, class:'form-label overflow-hidden' do%>
-          <%= image_tag @edit_photo.image_url.url, style:"width:100%" %>
+        <%= form.label :image_url, class:'edit_photo form-label ',id:"label_photo_image_url" do%>
+          <div class="edit_photo image__container m-3 border ">
+            <%= image_tag @edit_photo.image_url.url %>
+            <button>X</button>
+          </div>
         <%end %>
       </div>
 

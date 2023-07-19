@@ -23,7 +23,7 @@
 
                         div.appendChild(img)
                         let button = document.createElement("button")
-                        button.innerHTML = "DELETE"
+                        button.innerHTML = "X"
                         div.appendChild(button)
                         button.addEventListener('click',() =>{
                             div.remove()
@@ -39,7 +39,6 @@
                 if(index > -1){
                     listImage.splice(index,1)
                 }
-                console.log(listImage)
             }
             fileInput.addEventListener('change', () => {
                 preview()

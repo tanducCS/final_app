@@ -1,0 +1,18 @@
+.edit__user.form-label{
+    position: relative;
+}
+.edit__user.form-label h4{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #dddddd;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 88%;
+    transition: background-color 0.2s ease-out;
+}
+.edit__user.form-label h4:hover{
+    cursor: pointer;
+    background-color: #7c7c7c;
+}

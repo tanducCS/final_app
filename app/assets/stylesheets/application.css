@@ -20,6 +20,7 @@
 @import "components/album.css";
 @import "components/new_album.css";
 @import "components/feeds_album.css";
+@import "components/edit_user.css";
 
 .header{
     background-color: #3c5a9a;

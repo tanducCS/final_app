@@ -1,12 +1,15 @@
 <div class="user-navbar row mt-3 mb-5 ">
   <div class="user-navbar__avatar col-3 rounded-circle mx-3 overflow-hidden d-flex justify-content-center" style="height: 200px; width:200px">
-    <%= image_tag 'avatar.jpeg' %>
+    <% if user.avatar_url.url.nil? %>
+      <%= image_tag "avatar.jpeg", style:"width:100%"%>
+    <%else %>
+      <%= image_tag user.avatar_url.url %>
+    <%end %>
   </div>
-  <%= user.id%>
   <div class="user-navbar__information col  mt-2">
 
     <% if user.id === current_user.id %>
-      <%= link_to "Edit Profile",edit_user_registration_path(current_user),class: 'btn btn-outline-info' %>
+      <%= link_to "Edit Profile",edit_user_registration_path(current_user),class: 'btn btn-outline-info ms-3' %>
     <% elsif current_user.followees.exists?(id: user.id)%>
       <%= button_to "Unfollow", delete_follow_path(user.id),method: :delete, data: { turbo_confirm: "Unfollow this user?"}, class: 'btn btn-outline-warning' %>
 
@@ -14,7 +17,7 @@
       <%=  button_to "Follow",create_follow_path(user.id), data: {turbo_method: :post, turbo_confirm: "Follow this user?"}, class: 'btn btn-warning' %>
     <% end %>
 
-    <h1 class="fw-bolder my-3"><%= user.first_name + ' ' + user.last_name %></h1>
+    <h1 class="fw-bolder my-3 ms-3"><%= user.first_name + ' ' + user.last_name %></h1>
 
     <ul class="nav">
       <li class="nav-item">
