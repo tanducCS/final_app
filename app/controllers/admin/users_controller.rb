@@ -1,5 +1,6 @@
 module Admin
   class UsersController < ApplicationController
+    before_action :authorize_admin
     def index
       @pagy, @users = pagy(User.all)
     end
@@ -23,8 +24,16 @@ module Admin
       redirect_to admin_users_path
     end
 
+    private
     def user_param
       params.require(:user).permit(:first_name, :last_name, :email, :active, :avatar_url)
+    end
+
+
+    def authorize_admin
+      unless current_user&.is_admin?
+        redirect_back(fallback_location: root_path, alert: "You are not authorized to access this page.")
+      end
     end
   end
 end
