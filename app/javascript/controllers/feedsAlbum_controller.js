@@ -34,9 +34,8 @@ export default class extends Controller {
                     if (index === 0){
                         carouselItem.classList.add("active")
                     }
-
                     const img = document.createElement("img")
-                    img.classList.add("d-block","w-100")
+                    img.classList.add("d-block")
                     img.src = items.children[index].src
 
                     carouselItem.appendChild(img)

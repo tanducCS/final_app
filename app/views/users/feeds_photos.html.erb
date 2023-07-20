@@ -65,14 +65,17 @@
   </div>
 
 </div>
+<%if @pagy.pages > 1%>
   <%= turbo_frame_tag "pagination", src: feeds_photos_user_path(page: @pagy.next, format: :turbo_stream), loading: :lazy %>
+<%end %>
+
 <div class="col-sm-2 ">
 
 </div>
 <!-- Modal => a dialog present when click on a photo-->
 <div class="feeds-photo__model  modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-  <div class="modal-dialog ">
-    <div class="modal-content">
+  <div class="modal-dialog modal-xl ">
+    <div class="modal-content overflow-hidden">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

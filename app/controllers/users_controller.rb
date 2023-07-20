@@ -114,6 +114,7 @@ class UsersController < ApplicationController
 
   def feeds_photos
     @followees = current_user.followees
+
     @pagy, @photos = pagy_countless(Photo.where(user_id: @followees.ids), items: 10)
 
 
@@ -124,5 +125,11 @@ class UsersController < ApplicationController
   end
   def feeds_albums
     @followees = current_user.followees
+    @pagy, @albums = pagy_countless(Album.where(user_id: @followees.ids), items: 10)
+
+    respond_to do |format|
+      format.html
+      format.turbo_stream
+    end
   end
 end
