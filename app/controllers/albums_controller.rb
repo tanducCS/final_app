@@ -1,6 +1,7 @@
 class AlbumsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
+    @pagy, @albums = pagy(Album.where(user_id: params[:user_id]), items: 16)
   end
   def new
     @album = Album.new

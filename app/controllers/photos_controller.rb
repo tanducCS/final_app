@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @photos = Photo.where(user_id: params[:user_id])
+    @pagy, @photos = pagy(Photo.where(user_id: params[:user_id]),items: 16)
   end
   def new
     @photo = Photo.new

@@ -1,9 +1,11 @@
 class UsersController < ApplicationController
   def followings
-    @user = User.find(params[:id])
+    @user = User.find params[:id]
+    @pagy ,@followees = pagy(User.where(id: @user.followees.ids), items: 8)
   end
   def followers
     @user = User.find(params[:id])
+    @pagy ,@followers = pagy(User.where(id: @user.followers.ids),items: 8)
   end
   def edit
     @user_edit = User.find(params[:id])

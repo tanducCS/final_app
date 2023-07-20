@@ -46,6 +46,7 @@ gem "bootsnap", require: false
 gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'carrierwave', '~> 3.0'
 gem 'pagy', '~> 6.0' # omit patch digit
+gem 'cancancan'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

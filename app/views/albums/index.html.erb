@@ -10,7 +10,7 @@
 
   <!-- List items -->
   <div class="list-items row d-flex justify-content-evenly  mt-2 mb-3">
-    <% @user.albums.each do |album| %>
+    <% @albums.each do |album| %>
       <div class="list-items__item  mb-5 col-md-6 col-lg-3  d-flex justify-content-center align-items-center   " >
         <div class="album item__container-img rounded   d-flex justify-content-center align-items-center  shadow" style="width: 250px; height:190px">
           <%album.images.last(3).each  do |image|%>
@@ -33,21 +33,10 @@
   </div>
 
   <!-- Pagination -->
-  <nav aria-label="" class="d-flex justify-content-center">
-    <ul class="pagination">
-      <li class="page-item disabled">
-        <a class="page-link">Previous</a>
-      </li>
-      <li class="page-item active" ><a class="page-link" href="#">1</a></li>
-      <li class="page-item " aria-current="page">
-        <a class="page-link" href="#">2</a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#">Next</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="d-flex justify-content-center">
+    <%== pagy_bootstrap_nav(@pagy) if @pagy.pages > 1 %>
+  </div>
+
 </div>
 <div class="col-sm-2 ">
 
