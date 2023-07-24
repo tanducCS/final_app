@@ -10,7 +10,12 @@
 
   </div>
   <div class="col-4 rounded">
-    <input type="search" placeholder="Search Photo/ Album" class="w-100">
+    <% if @q.nil? %>
+      <input type="search" placeholder="Search Photo/ Album" class="w-100">
+    <%else %>
+      <%= render partial: "search/form" %>
+    <%end %>
+
   </div>
   <div class="col-2">
 

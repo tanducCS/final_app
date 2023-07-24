@@ -1,0 +1,51 @@
+<% albums&.each do |album|%>
+  <div class="list-items__item  mb-3 col-lg-6 " style="height: 350px;">
+    <div class="card h-100 shadow bg-body-secondary" >
+      <div class="row g-2 "  style="height: 100%">
+        <div class="col-xl-5 album item__images ">
+          <%album.images.each do |image| %>
+            <%= image_tag image.url, class:'border border-white', style: 'height: 300px;width:200px' %>
+          <%end %>
+        </div>
+        <div class="col-xl-7 position-relative">
+          <div class="card-body ">
+            <div class="card-title d-flex flex-row align-items-center ">
+              <div class="overflow-hidden rounded-circle" style="width: 50px; height:50px;">
+                <% if album.user.avatar_url.url.nil? %>
+                  <%= image_tag "avatar.jpeg",class:' me-3', style:"width:100%"%>
+                <%else %>
+                  <%= image_tag album.user.avatar_url.url, class:'me-3', style:"width:100%"%>
+                <%end %>
+              </div>
+              <h5><%= link_to album.user.first_name + ' ' + album.user.last_name,user_photos_path(album.user.id),class:'text-decoration-none'%></h5>
+            </div>
+            <p class="card-text fw-bold" ><%= album.title %></p>
+            <p class="card-text mb-3"><%= album.description %></p>
+            <div class="position-absolute bottom-0 mb-2" style="width: 90%;">
+              <div class="d-flex justify-content-between align-items-center w-100" >
+                <% if album.liked_by_users.exists?(current_user.id)  %>
+                  <%= turbo_frame_tag "album_#{album.id}",class:'d-flex flex-row ' do %>
+                    <%= link_to delete_like_album_path(album_id: album.id),class:'me-3',data: {turbo_method: :delete} do%>
+                      <i class="fa-solid fa-heart"></i>
+                    <% end %>
+                    <p style="margin-bottom: 0;"><%= album.liked_by_users.size%></p>
+                  <%end %>
+                <%else %>
+                  <%= turbo_frame_tag "album_#{album.id}",class:'d-flex flex-row ' do %>
+                    <%= link_to create_like_album_path(album_id: album.id),class:'me-3',data: {turbo_method: :post} do%>
+                      <i class="fa-regular fa-heart"></i>
+                    <% end %>
+                    <p style="margin-bottom: 0;"><%= album.liked_by_users.size%></p>
+                  <%end %>
+                <%end %>
+                <p class="card-text"><small class="text-body-secondary"><%= album.created_at.strftime("%I:%M %p %m/%d/%Y") %></small></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+<% end %>

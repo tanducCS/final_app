@@ -35,6 +35,15 @@ Rails.application.routes.draw do
     post 'follow/create/:id', to: 'users#create_follow', as: :create_follow
     delete 'follow/delete/:id', to: 'users#delete_follow', as: :delete_follow
 
+  post 'search/photo', to: 'search#index', as: 'search'
+  get   'search/photo', to: 'search#index', as: 'search_photos'
+
+  post 'search/album', to: 'search#search_album', as: 'search_album'
+  get 'search/album', to: 'search#search_album', as: 'search_albums'
+
+  post 'search/photo/suggestions', to: 'search#suggestions', as: 'search_suggestions'
+
+
   get 'feed', to: 'pages#feed'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -117,8 +117,10 @@ class UsersController < ApplicationController
   def feeds_photos
     @followees = current_user.followees
 
-    @pagy, @photos = pagy_countless(Photo.where(user_id: @followees.ids), items: 10)
+    @q = Photo.ransack(params[:q])
+    photos = @q.result.where(user_id: @followees.ids).order(created_at: :desc)
 
+    @pagy, @photos = pagy_countless(photos, items: 10)
 
     respond_to do |format|
       format.html
@@ -127,7 +129,10 @@ class UsersController < ApplicationController
   end
   def feeds_albums
     @followees = current_user.followees
-    @pagy, @albums = pagy_countless(Album.where(user_id: @followees.ids), items: 10)
+
+    @q = Album.ransack(params[:q])
+    albums = @q.result.where(user_id: @followees.ids).order(created_at: :desc)
+    @pagy, @albums = pagy_countless(albums, items: 10)
 
     respond_to do |format|
       format.html

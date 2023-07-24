@@ -1,0 +1,13 @@
+<%if current_page?(feeds_photos_user_path(current_user)) %>
+  <%= search_form_for @q, url: search_path,
+                      html: { method: :post } do |f| %>
+    <%= f.label :title_or_description_cont, class:'d-none' %>
+    <%= f.search_field :title_or_description_cont %>
+  <%end %>
+<%else %>
+  <%= search_form_for @q, url: search_album_path,
+                      html: { method: :post } do |f| %>
+    <%= f.label :title_or_description_cont, class:'d-none' %>
+    <%= f.search_field :title_or_description_cont %>
+  <%end %>
+<%end %>

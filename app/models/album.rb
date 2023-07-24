@@ -45,4 +45,14 @@ class Album < ApplicationRecord
 
   validates :title, :sharing_mode, :description, :user_id, presence: true
 
+
+  def self.ransackable_attributes(auth_object = nil)
+    ["created_at", "description", "id", "images", "sharing_mode", "title", "updated_at", "user_id"]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    ["like_albums", "liked_by_users", "photo_albums", "photos", "user"]
+  end
+
+
 end

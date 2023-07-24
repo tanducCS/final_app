@@ -1,0 +1,27 @@
+
+
+<%if @pagy1.page === 1  %>
+  <!--Check if the first search then update, else is scroll so need append-->
+  <%= turbo_stream.update "feeds_list-items" do %>
+    <!--  render partial 10 photos-->
+    <%= render "photos/photos", photos: @photos1 %>
+  <% end %>
+<%else %>
+  <%= turbo_stream.append "feeds_list-items" do %>
+    <!--  render partial 10 photos-->
+    <%= render "photos/photos", photos: @photos1 %>
+  <% end %>
+<%end %>
+
+
+
+
+<% if @pagy1.next.present? %>
+  <%= turbo_stream.replace "pagination" do %>
+    <%= turbo_frame_tag "pagination", src: search_photos_path(current_user,page: @pagy1.next, format: :turbo_stream), loading: :lazy %>
+  <% end %>
+<%else %>
+  <%= turbo_stream.replace "pagination" do %>
+    <%= turbo_frame_tag "pagination" %>
+  <% end %>
+<% end %>

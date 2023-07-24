@@ -47,6 +47,9 @@ gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'carrierwave', '~> 3.0'
 gem 'pagy', '~> 6.0' # omit patch digit
 gem 'cancancan'
+gem 'searchkick', '~> 5.3'
+gem 'elasticsearch', '~> 7.0'
+gem 'ransack'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

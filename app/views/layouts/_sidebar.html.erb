@@ -1,8 +1,17 @@
 <div class="sidebar1 col-2 mt-5 d-flex justify-content-center">
-  <% def feeds_photos_user_path(current_user)
-       # code here
-     end
-     if user_signed_in? %>
+  <% if user_signed_in? and current_user&.is_admin? %>
+    <ul class="nav flex-column align-items-center position-fixed">
+      <li class="nav-item">
+        <%= link_to "Manage Photos", admin_photos_path, class:current_page?(admin_photos_path) ? "nav-link" : "nav-link text-black"  %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Manage Albums", admin_albums_path, class:current_page?(admin_albums_path) ? "nav-link" : "nav-link text-black" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Manage Users", admin_users_path, class:(current_page?(admin_users_path) or current_page?(admin_root_path)) ? "nav-link" : "nav-link text-black" %>
+      </li>
+    </ul>
+  <%elsif user_signed_in? %>
     <ul class="nav flex-column align-items-center position-fixed">
       <li class="nav-item ">
         <%= link_to "Feeds", feeds_photos_user_path(current_user), class: "nav-link active" %>

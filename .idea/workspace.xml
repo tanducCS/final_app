@@ -6,9 +6,37 @@
   <component name="ChangeListManager">
     <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/pages/feeds.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/pages/feeds.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/feedsAlbum_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/feedsAlbum_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/feedsPhoto_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/feedsPhoto_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/album.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/photo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/photo.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_albums.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_albums.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_albums.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_albums.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.turbo_stream.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/71/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/72/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/73/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/74/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/75/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/76/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/77/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/78/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/79/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/80/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/81/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/82/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/83/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/84/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/85/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/86/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +200,11 @@
       <workItem from="1689559661862" duration="6979000" />
       <workItem from="1689645723434" duration="21300000" />
       <workItem from="1689731680402" duration="19153000" />
-      <workItem from="1689819429327" duration="12925000" />
+      <workItem from="1689819429327" duration="18293000" />
+      <workItem from="1689904568706" duration="23032000" />
+      <workItem from="1690132420204" duration="8292000" />
+      <workItem from="1690161591347" duration="1591000" />
+      <workItem from="1690163194396" duration="20199000" />
     </task>
     <servers />
   </component>

@@ -13,6 +13,8 @@
 #  is_belong_to_album :boolean          default(FALSE)
 #
 class Photo < ApplicationRecord
+  # Searchkick
+
   # Association
   enum :sharing_mode, [:public1, :private1]
   belongs_to :user
@@ -34,4 +36,11 @@ class Photo < ApplicationRecord
   validates :title, :sharing_mode, :description, :user_id, :image_url, presence: true
 
   mount_uploader :image_url, ImageUploader
+
+  def self.ransackable_associations(auth_object = nil)
+    %w[albums, like_photos liked_by_users photo_albums user]
+  end
+  def self.ransackable_attributes(auth_object = nil)
+    %w[created_at description id image_url is_belong_to_album sharing_mode title updated_at user_id]
+  end
 end

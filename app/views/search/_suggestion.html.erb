@@ -1,0 +1,9 @@
+<% if results.present? %>
+  <div>
+    <% results.each do |result| %>
+      <div>
+        <%= link_to "result", post, class:'' %>
+      </div>
+    <%end %>
+  </div>
+<%end %>
