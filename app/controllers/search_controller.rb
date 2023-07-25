@@ -33,7 +33,6 @@ class SearchController < ApplicationController
     else
       @q = Album.where(user_id: @followees.ids).ransack(search_params "album")
       albums = @q.result.order(created_at: :desc)
-      puts albums.size
       @pagy1, @albums1 = pagy_countless(albums, items: 10)
     end
 
@@ -42,6 +41,27 @@ class SearchController < ApplicationController
     end
   end
 
+  def suggestions
+
+    @query = params[:query]
+    if(params[:type] === 'photo')
+      @q = Photo.ransack(@query)
+    else
+      @q = Album.ransack(@query)
+    end
+
+    @result = @q.result.order(created_at: :desc)
+
+    respond_to do |format|
+      format.turbo_stream do
+        render turbo_stream:
+                 turbo_stream.update('suggestions',
+                                     partial: 'search/suggestion',
+                                     locals: {results: @result})
+      end
+    end
+
+  end
 
 
   protected

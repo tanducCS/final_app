@@ -62,7 +62,6 @@ export default class extends Controller {
                     const text = cardBody.querySelectorAll('.card-text')
                     myModalTitle.innerHTML = text[0].innerHTML
                     myModalDescription.innerHTML = text[1].innerHTML
-                    console.log(items.children[0].src)
                     for(let index = 0; index < items.children.length; index++){
                         const carouselItem = document.createElement("div")
                         carouselItem.classList.add("carousel-item")

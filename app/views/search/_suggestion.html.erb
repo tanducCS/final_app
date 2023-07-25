@@ -1,9 +1,21 @@
-<% if results.present? %>
-  <div>
-    <% results.each do |result| %>
-      <div>
-        <%= link_to "result", post, class:'' %>
+<%if results.any? %>
+  <%results.each do |result| %>
+    <div class="suggestion-container row pb-3 border-bottom">
+      <div class="suggestion-container__img col-3 mt-3" style= "width:90px;height:90px;">
+        <%if result.instance_of?(Photo) %>
+          <%= image_tag result.image_url.url,style: "width:70px;height:70px;" %>
+        <%else %>
+          <div class="album-container">
+            <% result.images.last(3).each do |image| %>
+              <%= image_tag image.url,style: "width:70px;height:70px;",class:'album-container__img' %>
+            <%end %>
+          </div>
+        <%end %>
+
       </div>
-    <%end %>
-  </div>
+      <div class="suggestion-container__detail col-9">
+        <%= link_to result.title, edit_photo_path(result.id) %>
+      </div>
+    </div>
+  <%end %>
 <%end %>

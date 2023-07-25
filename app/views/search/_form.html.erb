@@ -1,13 +1,38 @@
 <%if current_page?(feeds_photos_user_path(current_user)) %>
   <%= search_form_for @q, url: search_path,
-                      html: { method: :post } do |f| %>
+                      html: { method: :post },
+                      data: {
+                        controller: "searchSuggestion",
+                        action: "keyup->searchSuggestion#suggestions",
+                        suggestions_url: search_suggestions_path
+                      } do |f| %>
     <%= f.label :title_or_description_cont, class:'d-none' %>
-    <%= f.search_field :title_or_description_cont %>
+    <%= f.search_field :title_or_description_cont,
+                       data: {
+      searchSuggestion_target: "input",
+      action: "blur->searchSuggestion#hideSuggestions",
+      suggestions_url: search_suggestions_path,
+    }, placeholder: "Search", autocomplete: "off",class: 'w-100'%>
+    <div id="suggestions" class="visually-hidden" data-searchSuggestion-target="suggestions", data-action="mousedown->searchSuggestion#childClicked">
+      <%= render  partial: "search/suggestion", locals: {results: []} %>
+    </div>
   <%end %>
 <%else %>
   <%= search_form_for @q, url: search_album_path,
-                      html: { method: :post } do |f| %>
+                      html: { method: :post },
+                      data: {
+                        controller: "searchSuggestion",
+                        action: "keyup->searchSuggestion#suggestions",
+                        suggestions_url: search_album_suggestion_path
+                      } do |f| %>
     <%= f.label :title_or_description_cont, class:'d-none' %>
-    <%= f.search_field :title_or_description_cont %>
+    <%= f.search_field :title_or_description_cont, data: {
+      searchSuggestion_target: "input",
+      action: "blur->searchSuggestion#hideSuggestions",
+    }, placeholder: "Search", autocomplete: "off",class: 'w-100' %>
+    <div id="suggestions" class="visually-hidden" data-searchSuggestion-target="suggestions", data-action="mousedown->searchSuggestion#childClicked">
+      <%= render partial: "search/suggestion", locals: {results: []} %>
+    </div>
   <%end %>
 <%end %>
+

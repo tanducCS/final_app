@@ -46,3 +46,40 @@
 .header{
     background-color: #3c5a9a;
 }
+.header #suggestions{
+    width: 33%;
+    position: absolute;
+    top: 100%;
+    left: 17.25%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 12px;
+    max-height: 200px; /* Giới hạn chiều cao của suggestions để tránh lồi ra quá nhiều */
+    overflow-y: auto; /* Cho phép cuộn nội dung nếu nó vượt quá chiều cao tối đa */
+    z-index: 1; /* Đảm bảo rằng suggestions hiển thị trên các phần tử khác nằm dưới */
+
+    transition: background-color 0.2s ease-out;
+}
+
+.header #suggestions .suggestion-container:hover{
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+.header #suggestions .album-container{
+    position: relative;
+}
+.header #suggestions .album-container .album-container__img{
+    position: absolute;
+
+    z-index: 3;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+.header #suggestions .album-container .album-container__img:nth-child(2){
+    z-index: 2;
+    transform: rotate(6deg);
+}
+.header #suggestions .album-container .album-container__img:nth-child(3){
+    z-index: 1;
+    transform: rotate(12deg);
+}

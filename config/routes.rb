@@ -42,7 +42,7 @@ Rails.application.routes.draw do
   get 'search/album', to: 'search#search_album', as: 'search_albums'
 
   post 'search/photo/suggestions', to: 'search#suggestions', as: 'search_suggestions'
-
+  post 'search/album/suggestions', to: 'search#suggestions', as: 'search_album_suggestion'
 
   get 'feed', to: 'pages#feed'
 
