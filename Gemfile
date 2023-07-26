@@ -50,6 +50,7 @@ gem 'cancancan'
 gem 'searchkick', '~> 5.3'
 gem 'elasticsearch', '~> 7.0'
 gem 'ransack'
+gem 'noticed', '~> 1.6', '>= 1.6.3'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

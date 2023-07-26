@@ -26,6 +26,8 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
 
+
+
   has_many :like_albums, dependent: :destroy
   has_many :liked_albums, through: :like_albums,  source: :album
 

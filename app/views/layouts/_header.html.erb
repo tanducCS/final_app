@@ -33,6 +33,16 @@
           <%end %>
         </div>
         <%= link_to current_user.first_name + ' ' + current_user.last_name, user_photos_path(current_user), class:"text-white d-none d-md-block h5 text-decoration-none" %>
+        <div class="dropdown ms-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bell"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
       </div>
     <%end %>
   </div>
