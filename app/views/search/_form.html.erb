@@ -13,9 +13,10 @@
       action: "blur->searchSuggestion#hideSuggestions",
       suggestions_url: search_suggestions_path,
     }, placeholder: "Search", autocomplete: "off",class: 'w-100'%>
-    <div id="suggestions" class="visually-hidden" data-searchSuggestion-target="suggestions", data-action="mousedown->searchSuggestion#childClicked">
+    <turbo-frame id="suggestions" class="visually-hidden" data-searchSuggestion-target="suggestions", data-action="mousedown->searchSuggestion#childClicked">
       <%= render  partial: "search/suggestion", locals: {results: []} %>
-    </div>
+    </turbo-frame>
+
   <%end %>
 <%else %>
   <%= search_form_for @q, url: search_album_path,
