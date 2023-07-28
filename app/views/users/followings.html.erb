@@ -9,7 +9,7 @@
         <div class="follow item__container-user rounded  d-flex justify-content-center align-items-center  shadow bg-body-secondary row" style="width: 250px; height:300px">
           <div class="follow user__avatar border rounded-circle overflow-hidden d-flex justify-content-center" >
             <% if followee.avatar_url.url.nil? %>
-              <%= image_tag "avatar.jpeg", style:"width:100%"%>
+              <%= image_tag "https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png", style:"width:100%"%>
             <%else %>
               <%= image_tag followee.avatar_url.url %>
             <%end %>

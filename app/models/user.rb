@@ -34,6 +34,7 @@ class User < ApplicationRecord
   has_many :like_photos, dependent: :destroy
   has_many :liked_photos, through: :like_photos, source: :photo
 
+  has_many :notifications, as: :recipient
 
   has_many :albums, dependent: :destroy
   has_many :photos, dependent: :destroy

@@ -86,7 +86,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_030730) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "photo_albums", force: :cascade do |t|
+  create_table "photo_belong_to_albums", force: :cascade do |t|
     t.bigint "photo_id"
     t.bigint "album_id"
     t.datetime "created_at", null: false
@@ -129,7 +129,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_26_030730) do
   add_foreign_key "albums", "users"
   add_foreign_key "on_follows", "users", column: "followee_id"
   add_foreign_key "on_follows", "users", column: "follower_id"
-  add_foreign_key "photo_albums", "albums"
-  add_foreign_key "photo_albums", "photos"
+  add_foreign_key "photo_belong_to_albums", "albums"
+  add_foreign_key "photo_belong_to_albums", "photos"
   add_foreign_key "photos", "users"
 end

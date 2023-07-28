@@ -26,6 +26,7 @@ gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+gem 'cloudinary', '~> 1.2', '>= 1.2.2'
 
 gem 'annotate', '~> 3.2'
 
@@ -51,7 +52,8 @@ gem 'searchkick', '~> 5.3'
 gem 'elasticsearch', '~> 7.0'
 gem 'ransack'
 gem 'noticed', '~> 1.6', '>= 1.6.3'
-
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+gem 'faker', '~> 3.2'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -81,3 +83,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "dockerfile-rails", ">= 1.5", :group => :development

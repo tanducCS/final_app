@@ -12,7 +12,7 @@
             <div class="card-title d-flex flex-row align-items-center ">
               <div class="overflow-hidden rounded-circle" style="width: 50px; height:50px;">
                 <% if album.user.avatar_url.url.nil? %>
-                  <%= image_tag "avatar.jpeg",class:' me-3', style:"width:100%"%>
+                  <%= image_tag "https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png",class:' me-3', style:"width:100%"%>
                 <%else %>
                   <%= image_tag album.user.avatar_url.url, class:'me-3', style:"width:100%"%>
                 <%end %>

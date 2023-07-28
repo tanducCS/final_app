@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!
   def followings
     @user = User.find params[:id]
     @pagy ,@followees = pagy(User.where(id: @user.followees.ids), items: 8)
@@ -116,7 +117,9 @@ class UsersController < ApplicationController
 
   def feeds_photos
     @followees = current_user.followees
-
+    if current_user
+      @notifications = current_user.notifications.reverse
+    end
     @q = Photo.ransack(params[:q])
     photos = @q.result.where(user_id: @followees.ids).order(created_at: :desc)
 
@@ -129,7 +132,9 @@ class UsersController < ApplicationController
   end
   def feeds_albums
     @followees = current_user.followees
-
+    if current_user
+      @notifications = current_user.notifications.reverse
+    end
     @q = Album.ransack(params[:q])
     albums = @q.result.where(user_id: @followees.ids).order(created_at: :desc)
     @pagy, @albums = pagy_countless(albums, items: 10)

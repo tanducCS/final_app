@@ -110,7 +110,6 @@ export default class extends Controller {
                         carouselSlide.insertBefore(carouselInnerNew,carouselSlide.children[0])
 
                         const images = item.querySelectorAll('.suggestion-container__img img')
-                        console.log(images)
                         myModalTitle.innerHTML = title.innerHTML
                         myModalDescription.innerHTML = description.innerHTML
 

@@ -25,7 +25,10 @@
           <div class="album container__editblock ">
             <h5 class="text-center"><%= album.images.size %> PHOTOS</h5>
           </div>
-          <%= link_to "EDIT", edit_album_path(album.id),class:'album container__edit_album rounded text-white text-decoration-none' %>
+          <%if @user.id === current_user.id%>
+            <%= link_to "EDIT", edit_album_path(album.id),class:'album container__edit_album rounded text-white text-decoration-none' %>
+          <%end %>
+
         </div>
       </div>
     <% end %>

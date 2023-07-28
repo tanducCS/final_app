@@ -1,7 +1,15 @@
-<div>
+<div class="border">
   <%if unread %>
     <span>Unread</span>
   <%end %>
-  <span><%=user.id %></span>
-  <span><%= photo.title %></span>
+  <% if local_assigns[:type] === 'like_photo' %>
+    <span class="fw-bold"><%=local_assigns[:user].first_name + ' ' + user.last_name %></span>
+    <span>liked your photo:</span>
+    <span class="fw-bold"><%= photo&.title %></span>
+  <%elsif local_assigns[:type] === 'like_album'%>
+    <span class="fw-bold"><%=user.first_name + ' ' + user.last_name %></span>
+    <span>liked your album:</span>
+    <span class="fw-bold"><%= album&.title %></span>
+  <%end %>
+
 </div>

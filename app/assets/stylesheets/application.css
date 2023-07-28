@@ -83,3 +83,11 @@
     z-index: 1;
     transform: rotate(12deg);
 }
+
+
+/*css notification*/
+.header .user-notification .container{
+    width: 300px;
+    max-height: 200px; /* Giới hạn chiều cao của suggestions để tránh lồi ra quá nhiều */
+    overflow-y: auto; /* Cho phép cuộn nội dung nếu nó vượt quá chiều cao tối đa */
+}

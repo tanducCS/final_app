@@ -1,7 +1,7 @@
 <div class="user-navbar row mt-3 mb-5 ">
   <div class="user-navbar__avatar col-3 rounded-circle mx-3 overflow-hidden d-flex justify-content-center" style="height: 200px; width:200px">
     <% if user.avatar_url.url.nil? %>
-      <%= image_tag "avatar.jpeg", style:"width:100%"%>
+      <%= image_tag "https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png", style:"width:100%"%>
     <%else %>
       <%= image_tag user.avatar_url.url %>
     <%end %>

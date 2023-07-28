@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   authenticated :user, ->(user) { user.is_admin? } do
     root to: "admin/users#index", as: :admin_root
   end
+  authenticated :user, ->(user) { !user.is_admin? } do
+    root to: "users#feeds_photos", as: :authenticated_root, defaults: { format: :html }
+  end
   root to: 'pages#feeds'
   devise_for :users, :controllers => { :registrations => "users/registrations", sessions: 'users/sessions' }
     resources :users, shallow: true do
@@ -19,6 +22,7 @@ Rails.application.routes.draw do
     resources :albums, shallow: true do
       resources :photos
     end
+
 
     namespace :admin do
       resources :users

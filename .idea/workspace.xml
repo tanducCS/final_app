@@ -5,14 +5,398 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65c25d0f-cc21-4989-ae47-2383f084e286" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.byebug_history" beforeDir="false" afterPath="$PROJECT_DIR$/.byebug_history" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/photos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/photos_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/searchSuggestion_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/searchSuggestion_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/album.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/like_album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/like_album.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/like_photo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/like_photo.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/photo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/photo.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/photo_album.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/photo_album.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/notifications/photo_notification.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/notifications/photo_notification.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/albums/_albums.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/albums/_albums.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/albums/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/albums/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_user_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notifications/_notification.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notifications/_notification.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notifications/_notifications.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notifications/_notifications.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/photos/_photos.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/photos/_photos.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/search/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/search/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_albums.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_albums.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/feeds_photos.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/feeds_photos.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/followers.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/followers.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/followings.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/followings.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/mailchimp-mpwF3Mv2UaU-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/10/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/11/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/11/mailchimp-mpwF3Mv2UaU-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/11/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/12/mailchimp-mpwF3Mv2UaU-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/12/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/13/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/13/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/13/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/14/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/15/nunzio-guerrera-UQTxH9oMqgg-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/15/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/15/tobias-reich-XOCm_iufXEk-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/15/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/17/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/17/milad-fakurian-9CmN4HbM31o-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/17/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/17/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/17/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/18/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/19/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/19/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/19/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/19/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/19/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/19/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/20/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/20/marek-piwnicki-c79dP9Aq8qA-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/20/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/20/milad-fakurian-9CmN4HbM31o-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/20/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/20/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/21/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/21/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/21/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/22/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/22/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/22/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/22/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/23/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/23/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/23/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/23/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/23/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/24/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/24/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/24/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/24/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/25/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/25/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/25/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/25/tobias-reich-XOCm_iufXEk-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/25/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/26/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/26/neelakshi-singh-t3T8CVo3oTA-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/26/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/26/tobias-reich-XOCm_iufXEk-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/26/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/26/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/27/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/27/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/28/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/29/1688652376018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/29/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/30/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/30/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/30/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/30/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/30/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/30/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/30/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/31/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/31/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/31/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/32/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/32/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/32/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/33/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/33/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/33/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/33/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/34/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/34/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/34/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/35/1688652376018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/35/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/35/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/35/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/35/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/36/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/36/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/36/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/36/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/37/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/37/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/37/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/37/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/37/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/37/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/38/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/38/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/38/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/38/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/38/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/39/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/39/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/39/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/39/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/39/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/40/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/40/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/40/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/40/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/40/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/41/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/41/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/41/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/41/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/41/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/41/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/41/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/42/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/42/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/42/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/42/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/42/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/42/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/43/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/43/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/43/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/43/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/43/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/43/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/44/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/45/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/45/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/45/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/45/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/45/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/45/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/46/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/46/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/47/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/47/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/47/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/48/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/48/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/48/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/48/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/49/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/49/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/49/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/49/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/49/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/49/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/50/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/50/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/50/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/50/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/51/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/51/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/51/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/52/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/53/mahdi-bafande-2uiWqCazp20-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/53/mahdi-bafande-Foi6CBvP1og-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/53/milin-john-2IctW4TT6Vk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/54/ani-adigyozalyan-5FtVHIeDnUs-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/54/david-lee-aBzTX-pYosg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/54/mahdi-bafande-2uiWqCazp20-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/54/mahdi-bafande-Foi6CBvP1og-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/7/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/7/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/7/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/7/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/7/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/8/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/8/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/8/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/8/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/8/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/9/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/9/mailchimp-mpwF3Mv2UaU-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/9/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/album/images/9/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/100/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/101/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/102/1688652376018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/103/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/104/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/105/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/106/abhishek-tanwar-uIL_e2E-n10-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/107/abhishek-tanwar-uIL_e2E-n10-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/108/david-lee-aBzTX-pYosg-unsplash__1_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/109/ani-adigyozalyan-5FtVHIeDnUs-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/110/david-lee-aBzTX-pYosg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/111/abhishek-tanwar-uIL_e2E-n10-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/112/mohamed-nohassi-YvoedPdh9JM-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/113/ani-adigyozalyan-5FtVHIeDnUs-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/114/david-lee-aBzTX-pYosg-unsplash__1_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/115/mahdi-bafande-2uiWqCazp20-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/116/mahdi-bafande-Foi6CBvP1og-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/117/mahdi-bafande-2uiWqCazp20-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/118/milin-john-2IctW4TT6Vk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/20/axp-photography-UZVLQVbAKYw-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/21/axp-photography-UZVLQVbAKYw-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/22/axp-photography-UZVLQVbAKYw-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/23/jack-finnigan-H8HvioFXi60-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/24/kelly-lim-6Z9ZbsJfGuQ-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/25/hossein-nasr-2NUu_J3zgkE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/26/jack-finnigan-H8HvioFXi60-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/27/kelly-lim-6Z9ZbsJfGuQ-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/28/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/29/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/30/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/31/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/32/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/33/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/34/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/35/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/36/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/36/veronica-wu-tJsF-Jp7Dm0-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/37/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/38/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/39/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/40/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/40/tobias-reich-XOCm_iufXEk-unsplash(2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/41/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/42/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/43/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/44/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/45/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/56/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/57/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/58/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/59/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/60/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/61/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/62/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/63/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/64/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/65/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/66/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/67/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/68/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/69/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/70/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/87/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/88/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/89/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/90/1688652376018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/91/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/92/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/93/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/94/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/95/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/96/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/97/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/98/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/photo/image_url/99/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1688614769-416229168367555-0001-5334/photo-1688354222920-691a471afabf.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1688616788-803605032375167-0003-9488/photo-1688354222920-691a471afabf.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1688626077-858569562142422-0001-9456/NUS_Training_Advanced_Final_App_Requirement_0_1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689152915-71699008988284-0001-3916/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689154821-169826089193303-0003-7910/user_follow2.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689154821-847827925284067-0002-3290/user_follow3.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689155048-330065510937762-0005-2286/user_follow2.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689155048-85724499998530-0004-4920/user_follow3.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689215940-531503832663991-0001-0141/Screenshot_from_2023-07-06_20-41-06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689220393-123022154716347-0002-9917/user_follow1.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689220512-426865085548737-0003-9143/user_follow1.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689304465-241047288559067-0006-2790/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689304465-80878076614504-0007-2845/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689304465-992976977227461-0008-2581/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689646267-856893849646341-0003-4734/user_follow.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651395-158819687955075-0006-3782/bob-brewer-aD5axmPDbdE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651399-320249140804406-0007-2341/josie-weiss-p79jUSSP-Vo-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651412-422880730713803-0008-0409/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651654-599747078056719-0009-3103/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651658-600549508225753-0010-1960/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651874-726927755098399-0011-9520/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651878-481630168422532-0012-3077/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689651997-73020587666625-0013-6317/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652067-20546888956627-0014-1559/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652385-606676798449705-0015-4946/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652570-804003979760493-0016-2073/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652574-849586220102940-0017-3722/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652639-16682245283277-0001-5981/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652664-653398907529263-0002-4858/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652669-399927300040396-0003-6576/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652674-30185926570210-0004-9396/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689652714-805469906397699-0005-7638/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689653168-642333684387289-0001-4862/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689654437-772874158869082-0011-8477/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689654455-439109347029460-0012-0769/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689654460-4513816364564-0013-3504/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689654613-996430497586102-0014-7931/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689654617-288953704816093-0015-1301/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689654620-461419766069799-0016-9568/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655167-272711702110673-0025-4342/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655171-935052031570973-0026-6251/marek-piwnicki-c79dP9Aq8qA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655182-448663115265642-0027-3066/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655188-618236270025990-0028-4943/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655194-179049110857203-0029-9575/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655201-901599332534226-0030-9105/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655228-196518900023526-0031-9957/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655243-656275935120128-0032-1549/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655247-872520925581013-0033-4694/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655252-686241453072456-0034-0815/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655258-473951459279908-0035-8404/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655264-747206442372182-0036-2601/bruno-guerrero-I9y_cMpSrrE-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655288-77222722708499-0037-9274/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655296-645980363142836-0038-9769/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655955-732245171680376-0003-7911/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655963-626977868994492-0004-5306/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655971-972336269951273-0005-0605/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689655977-771019625099581-0006-6695/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689656327-499855032717085-0007-8088/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689656332-741792355849841-0008-2133/nunzio-guerrera-UQTxH9oMqgg-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689656338-608212093904109-0009-3927/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689656345-784239901748978-0010-6024/milad-fakurian-9CmN4HbM31o-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689656351-829638443098814-0011-2541/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689656355-592214933483448-0012-5571/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689661392-525888635138945-0013-3203/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689661816-265737611066594-0014-2582/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689661841-666498640274376-0015-5115/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689661846-631833016841437-0016-6493/marek-piwnicki-qhufz3kiGak-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689661864-962821044662764-0017-4351/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689661873-427042843311288-0018-2858/art-institute-of-chicago-3m7YpBz3I7Y-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689662086-656994176525283-0019-7661/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689662279-327399851033075-0020-7247/tobias-reich-XOCm_iufXEk-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689662291-76539337088893-0021-0818/neelakshi-singh-t3T8CVo3oTA-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689662311-89128074657125-0022-3011/veronica-wu-tJsF-Jp7Dm0-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/tmp/1689662345-134158050832698-0023-9497/Screenshot_from_2023-07-13_09-33-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/user/avatar_url/18/user_follow2.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/user/avatar_url/19/nusframe-maumot-1701b264-3dce-477f-8024-77a156cb5c01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/user/avatar_url/21/user_follow.avif" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +422,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;searchsuggestion&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/tanduc/Documents/final_app/config/initializers&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "notification",
+    "last_opened_file_path": "/home/tanduc/Documents/final_app/config/initializers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.rails.projectView.checked": "true",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config/initializers" />
@@ -187,10 +571,26 @@
       <workItem from="1690248059622" duration="21984000" />
       <workItem from="1690301918165" duration="1052000" />
       <workItem from="1690335138563" duration="4090000" />
+      <workItem from="1690420347454" duration="9478000" />
+      <workItem from="1690429843373" duration="18111000" />
+      <workItem from="1690475842354" duration="3373000" />
+      <workItem from="1690500648160" duration="3203000" />
+      <workItem from="1690506695393" duration="16349000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

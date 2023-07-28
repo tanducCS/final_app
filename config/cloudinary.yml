@@ -1,0 +1,15 @@
+development:
+  cloud_name: "dmcxluvy2"
+  api_key: "355527215579787"
+  api_secret: "Q1o7663CDmjvStvfd8ZDgg_D6dk"
+  enhance_image_tag: true
+  folder: '\uploads\tmp'
+  static_file_support: false
+
+production:
+  cloud_name: "dmcxluvy2"
+  api_key: "355527215579787"
+  api_secret: "Q1o7663CDmjvStvfd8ZDgg_D6dk"
+  folder: '\uploads\tmp'
+  enhance_image_tag: true
+  static_file_support: false

@@ -1,9 +1,9 @@
 # To deliver this notification:
 #
-# PhotoNotification.with(post: @post).deliver_later(current_user)
-# PhotoNotification.with(post: @post).deliver(current_user)
+# LikeAlbumNotification.with(post: @post).deliver_later(current_user)
+# LikeAlbumNotification.with(post: @post).deliver(current_user)
 
-class PhotoNotification < Noticed::Base
+class LikeAlbumNotification < Noticed::Base
   # Add your delivery methods
   #
   deliver_by :database
@@ -23,11 +23,15 @@ class PhotoNotification < Noticed::Base
   def creator
     message&.user
   end
-  def photo
-    message&.photo
+  def album
+    message&.album
   end
 
   # def url
   #   user_photos_path(params[:post])
+  # end
+  #
+  # def url
+  #   post_path(params[:post])
   # end
 end

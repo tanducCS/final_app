@@ -16,7 +16,7 @@
 
         <%= f.label :avatar_url, class:'edit__user form-label overflow-hidden',id:'input__label',style: "width:200px;height:200px;" do%>
           <% if resource.avatar_url.url.nil? %>
-            <%= image_tag "avatar.jpeg", style:"width:100%",id:'input__image' %>
+            <%= image_tag "https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png", style:"width:100%",id:'input__image' %>
           <%else %>
             <%= image_tag resource.avatar_url.url, style:"width:100%",id:'input__image' %>
           <%end %>

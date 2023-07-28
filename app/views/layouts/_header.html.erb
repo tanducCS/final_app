@@ -26,23 +26,23 @@
         <div class="rounded-circle overflow-hidden me-2" style="height: 35px;width:35px">
           <%= link_to user_photos_path(current_user) do%>
             <%if current_user.avatar_url.url.nil? %>
-              <%= image_tag "avatar.jpeg",class:'',style: 'width:100%'%>
+              <%= image_tag "https://www.seekpng.com/png/detail/115-1150053_avatar-png-transparent-png-royalty-free-default-user.png",class:'',style: 'width:100%'%>
             <%else %>
               <%= image_tag current_user.avatar_url.url,class:'',style: 'width:100%'%>
             <%end %>
           <%end %>
         </div>
         <%= link_to current_user.first_name + ' ' + current_user.last_name, user_photos_path(current_user), class:"text-white d-none d-md-block h5 text-decoration-none" %>
-        <div class="dropdown ms-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-bell"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
+<!--        <div class="dropdown-notification">-->
+<!--          <button class="btn btn-secondary dropdown-notification__button"   >-->
+<!--            <i class="fa-solid fa-bell"></i>-->
+<!--          </button>-->
+<!--          <ul class="dropdownnotification__menu" id="myDropdown">-->
+<!--            <p>123</p>-->
+<!--            <p>123</p>-->
+<!--            <p>123</p>-->
+<!--          </ul>-->
+<!--        </div>-->
       </div>
     <%end %>
   </div>
@@ -51,7 +51,6 @@
       <%= link_to '<i class="fa-solid fa-right-from-bracket fa-2xl " style="color: #ffffff;"></i>'.html_safe, destroy_user_session_path, data: { turbo_method: :delete}, class: "d-md-none"%>
 
         <%= link_to "Logout", destroy_user_session_path,  data: { turbo_method: :delete}, class:'d-none d-md-block text-decoration-none text-white h5' %>
-
 
     <% else %>
       <%= link_to  new_user_session_path, class:'text-decoration-none' do%>

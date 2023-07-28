@@ -15,17 +15,17 @@
 
 
   <!-- Pagination -->
-  <%if @pagy.pages > 1%>
-    <div class="d-flex justify-content-center">
-      <div class="spinner-border" role="status" id="feeds_photo_loading" style="width: 3rem; height: 3rem;">
-        <span class="visually-hidden">Loading...</span>
-      </div>
-    </div>
-    <%= turbo_frame_tag "pagination", src: feeds_albums_user_path(page: @pagy.next, format: :turbo_stream), loading: :lazy %>
-  <%end %>
+
 
 </div>
-
+<%if @pagy.pages > 1%>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status" id="feeds_photo_loading" style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <%= turbo_frame_tag "pagination", src: feeds_albums_user_path(page: @pagy.next, format: :turbo_stream), loading: :lazy %>
+<%end %>
 <div class="col-sm-2 ">
 
 </div>
