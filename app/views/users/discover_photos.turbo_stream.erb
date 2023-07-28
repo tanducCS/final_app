@@ -1,0 +1,11 @@
+<%= turbo_stream.append "feeds_list-items" do %>
+  <!--  render partial 10 photos-->
+  <%= render "photos/discover_photos", photos: @photos %>
+<% end %>
+
+
+<% if @pagy.next.present? %>
+  <%= turbo_stream.replace "pagination" do %>
+    <%= turbo_frame_tag "pagination", src: discover_photos_user_path(id: current_user.id,page: @pagy.next, format: :turbo_stream), loading: :lazy %>
+  <% end %>
+<% end %>

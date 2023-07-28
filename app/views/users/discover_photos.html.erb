@@ -1,0 +1,49 @@
+<div class="col-10 col-md-8 bg-body ">
+  <!-- Button to choose photo or album -->
+  <div class="d-flex justify-content-center  mt-2">
+    <div class="category btn-group col-1 justify-content-center">
+      <%= link_to "Photos", discover_photos_user_path(current_user), class: ((current_page?(discover_photos_user_path(current_user)))? "btn btn-outline-primary active" : "btn btn-outline-primary ") %>
+      <%= link_to "Albums", discover_albums_user_path(current_user), class: (current_page?(discover_photos_user_path(current_user)))? "btn btn-outline-primary " : "btn btn-outline-primary active"%>
+    </div>
+  </div>
+
+
+  <!-- List items -->
+  <div class="list-items row d-flex justify-content-evenly g-5 mt-2" data-controller="feedsPhoto" id="feeds_list-items">
+    <%= render "photos/discover_photos", photos: @photos %>
+  </div>
+
+
+</div>
+<%if @pagy.pages > 1%>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status" id="feeds_photo_loading" style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <%= turbo_frame_tag "pagination", src: discover_photos_user_path(id: current_user.id,page: @pagy.next, format: :turbo_stream), loading: :lazy %>
+<%end %>
+
+<div class="col-sm-2 ">
+
+</div>
+<!-- Modal => a dialog present when click on a photo-->
+<div class="feeds-photo__model  modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-xl ">
+    <div class="modal-content overflow-hidden">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" id="close__button-modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="" alt="image">
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

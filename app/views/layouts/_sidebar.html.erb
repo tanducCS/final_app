@@ -14,10 +14,10 @@
   <%elsif user_signed_in? %>
     <ul class="nav flex-column align-items-center position-fixed">
       <li class="nav-item ">
-        <%= link_to "Feeds", feeds_photos_user_path(current_user), class: "nav-link active" %>
+        <%= link_to "Feeds", feeds_photos_user_path(current_user), class: current_page?((discover_photos_user_path(current_user) or discover_albums_user_path(current_user))) ? "nav-link text-black" : "nav-link " %>
       </li>
       <li class="nav-item">
-        <%= link_to "Discover", root_path, class: 'nav-link text-black' %>
+        <%= link_to "Discover", discover_photos_user_path(current_user), class: current_page?((discover_photos_user_path(current_user) or discover_albums_user_path(current_user))) ? "nav-link" : "nav-link text-black" %>
       </li>
     </ul>
   <%end %>

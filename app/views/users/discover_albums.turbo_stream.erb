@@ -1,0 +1,10 @@
+<%= turbo_stream.append "feeds_album__list-items" do %>
+  <!--  render 10 albums-->
+  <%= render "albums/discover_albums", albums: @albums %>
+<% end %>
+
+<% if @pagy.next.present? %>
+  <%= turbo_stream.replace "pagination" do %>
+    <%= turbo_frame_tag "pagination", src: discover_albums_user_path(page: @pagy.next, format: :turbo_stream), loading: :lazy %>
+  <% end %>
+<% end %>

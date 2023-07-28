@@ -132,11 +132,31 @@ class UsersController < ApplicationController
   end
   def feeds_albums
     @followees = current_user.followees
-    if current_user
-      @notifications = current_user.notifications.reverse
-    end
     @q = Album.ransack(params[:q])
     albums = @q.result.where(user_id: @followees.ids).order(created_at: :desc)
+    @pagy, @albums = pagy_countless(albums, items: 10)
+
+    respond_to do |format|
+      format.html
+      format.turbo_stream
+    end
+  end
+
+  def discover_photos
+
+    @q = Photo.ransack(params[:q])
+    photos = @q.result.where.not(user_id: current_user.id).order(created_at: :desc)
+
+    @pagy, @photos = pagy_countless(photos, items: 10)
+
+    respond_to do |format|
+      format.html
+      format.turbo_stream
+    end
+  end
+  def discover_albums
+    @q = Album.ransack(params[:q])
+    albums = @q.result.where.not(user_id: current_user.id).order(created_at: :desc)
     @pagy, @albums = pagy_countless(albums, items: 10)
 
     respond_to do |format|

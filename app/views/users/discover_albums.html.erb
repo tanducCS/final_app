@@ -1,0 +1,65 @@
+<div class="col-10 col-md-8 bg-body ">
+  <!-- Button to choose photo or album -->
+  <div class="d-flex justify-content-center  mt-2">
+    <div class="category btn-group col-1 justify-content-center" role="group">
+      <%= link_to "Photos", discover_photos_user_path(current_user), class: ((current_page?(discover_albums_user_path(current_user)))? "btn btn-outline-primary " : "btn btn-outline-primary active") %>
+      <%= link_to "Albums", discover_albums_user_path(current_user), class: (current_page?(discover_albums_user_path(current_user)))? "btn btn-outline-primary active" : "btn btn-outline-primary"%>
+    </div>
+  </div>
+
+
+  <!-- List items -->
+  <div class="list-items row d-flex justify-content-evenly g-5 mt-2" data-controller="feedsAlbum" id="feeds_album__list-items">
+    <%= render "albums/discover_albums", albums: @albums %>
+  </div>
+
+
+  <!-- Pagination -->
+
+
+</div>
+<%if @pagy.pages > 1%>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status" id="feeds_photo_loading" style="width: 3rem; height: 3rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <%= turbo_frame_tag "pagination", src: discover_albums_user_path(page: @pagy.next, format: :turbo_stream), loading: :lazy %>
+<%end %>
+<div class="col-sm-2 ">
+
+</div>
+<!-- Modal => a dialog present when click on a album-->
+<div class="feeds-album__modal  modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog  modal-xl"  >
+    <div class="modal-content overflow-hidden">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Nam Lorem ipsum dolor sit.</h1>
+        <button type="button" class="btn-close" id="close__button-modal"></button>
+      </div>
+      <div class="modal-body">
+
+        <div id="carouselExample" class="carousel slide" >
+          <div class="carousel-inner">
+            <!--add image here-->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <p></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
